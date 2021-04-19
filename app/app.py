@@ -2,11 +2,12 @@ from typing import List, Dict
 import mysql.connector
 import simplejson as json
 from flask import Flask, Response
+from flask import render_template
 
 app = Flask(__name__)
 
 
-def cities_import() -> List[Dict]:
+def listings_import() -> List[Dict]:
     config = {
         'user': 'root',
         'password': 'root',
@@ -27,8 +28,16 @@ def cities_import() -> List[Dict]:
 
 
 @app.route('/')
-def index() -> str:
-    js = json.dumps(cities_import())
+def index():
+    user = {'username': 'Miguel'}
+    listings_data = listings_import()
+
+    return render_template('index.html', title='Home', user=user, listings=listings_data)
+
+
+@app.route('/api/listings')
+def cities() -> str:
+    js = json.dumps(listings_import())
     resp = Response(js, status=200, mimetype='application/json')
     return resp
 
