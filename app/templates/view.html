@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card" class="m-5 p-2">
+    <h5 class="card-title">{{ listing.Index }} - {{ listing.Living_Space_sq_ft }}</h5>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{ listing.Beds }}</li>
+        <li class="list-group-item">{{ listing.Baths }}</li>
+        <li class="list-group-item">{{ listing.Zip }}</li>
+        <li class="list-group-item">{{ listing.Year }}</li>
+        <li class="list-group-item">{{ listing.List_Price }}</li>
+    </ul>
+    <div class="card-body">
+        <a href="/edit/{{listing.Index}}" class="card-link btn btn-primary">edit</a>
+    </div>
+</div>
+<form action="/delete/{{listing.Index}}" method="post"><button type="submit" class="btn btn-danger">Save</button></form>
+
+
+{% endblock %}
