@@ -15,7 +15,7 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 ![Part3](screenshots/zillowpart3.PNG)
 # Edit Record
 ![Edit](screenshots/edit.PNG)
-#Add Record
+# Add Record
 ![Add](screenshots/add.PNG)
-#Delete Record
+# Delete Record
 ![Delete](screenshots/delete.PNG)
