@@ -1,16 +1,20 @@
 
 CREATE DATABASE zillowData;
 use zillowData;
-CREATE TABLE IF NOT EXISTS tblZillowImport (
+CREATE TABLE IF NOT EXISTS tblZillowImport
+(
+    `id` int(3) AUTO_INCREMENT,
     `Index` INT,
     `Living_Space_sq_ft` INT,
     `Beds` INT,
     `Baths` NUMERIC(2, 1),
     `Zip` INT,
     `Year` INT,
-    `List_Price` INT
+    `List_Price` INT,
+    PRIMARY KEY (`id`)
 );
-INSERT INTO tblZillowImport VALUES
+INSERT INTO tblZillowImport (`Index`,Living_Space_sq_ft, Beds, Baths, Zip, Year, List_Price )
+VALUES
     ( 1, 2222, 3, 3.5, 32312, 1981, 250000),
     ( 2, 1628, 3, 2,   32308, 2009, 185000),
     ( 3, 3824, 5, 4,   32312, 1954, 399000),

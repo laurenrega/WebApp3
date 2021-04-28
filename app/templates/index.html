@@ -13,10 +13,9 @@
     </tr>
     </thead>
     <tbody>
-    {% for listing in listings %}
+    {% for listing in zillow %}
     <tr>
-        <td><a href="view/{{listing.Index}}">{{ listing.Index }}</a></td>
-
+        <td>{{ listing.Index }}</td>
         <td>{{ listing.Living_Space_sq_ft }}</td>
         <td>{{ listing.Beds }}</td>
         <td>{{ listing.Baths }}</td>

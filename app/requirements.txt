@@ -1,4 +1,0 @@
-
-Flask
-flask-mysql
-simplejson
