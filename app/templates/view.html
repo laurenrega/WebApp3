@@ -2,7 +2,7 @@
 {% block content %}
 
 <div class="card" class="m-5 p-2">
-    <h5 class="card-title">{{ listing.Index }} - {{ listing.Living_Space_sq_ft }}</h5>
+    <h5 class="card-title">Listing # {{ listing.Index }} - {{ listing.Living_Space_sq_ft }} sq ft</h5>
 
     <ul class="list-group list-group-flush">
         <li class="list-group-item">{{ listing.Beds }}</li>
@@ -15,7 +15,7 @@
         <a href="/edit/{{listing.id}}" class="card-link btn btn-primary">edit</a>
     </div>
 </div>
-<form action="/delete/{{listing.id}}" method="post"><button type="submit" class="btn btn-danger">Save</button></form>
+<form action="/delete/{{listing.id}}" method="post"><button type="submit" class="btn btn-danger">Delete</button></form>
 
 
 {% endblock %}
