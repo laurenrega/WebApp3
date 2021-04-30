@@ -19,3 +19,16 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 ![Add](screenshots/add.PNG)
 # Delete Record
 ![Delete](screenshots/delete.PNG)
+
+# Rest API:
+
+## Get Request
+![Get](screenshots/getlistings.PNG)
+## Post Request
+![Post](screenshots/postrequest1.PNG)
+## Put Request
+![Put](screenshots/putreq1.PNG)
+## Delete Request
+![Delete2](screenshots/deletereq1.PNG)
+## Listing 23 is gone
+![Gone](screenshots/listing23gone.PNG)
